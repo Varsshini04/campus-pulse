@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #09090b;
+  background-color: #f4f8ff;
+  --chart-primary: #93c5fd;
+  --chart-secondary: #fde68a;
+  --chart-gauge: #fde68a;
+}
+
+.dark {
+  --chart-primary: #a78bfa;
+  --chart-secondary: #c4b5fd;
+  --chart-gauge: #a78bfa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
